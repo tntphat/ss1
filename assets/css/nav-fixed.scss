@@ -1,0 +1,97 @@
+.fixed-nav {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in;
+  display: flex;
+  flex-direction: column;
+  background-color: $brown-light-color;
+  padding: 10px 10px 10px 5px;
+  border-radius: 0 20px 20px 0;
+  z-index: 10;
+  .btn-navigate {
+    padding: 2px;
+    color: $brown-color;
+    border-radius: 50%;
+    // background-color: yellow;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &--active {
+      color: $overlay-video-color;
+    }
+    &:not(:first-child) {
+      margin-top: 10px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #aaa69d;
+        top: 0px;
+        transform: translateY(-5px);
+      }
+    }
+    &:hover {
+      background-color: #84817a;
+    }
+  }
+}
+.fixed-nav--mobile {
+  display: none;
+}
+@media screen and(max-width:740px) {
+  .fixed-nav {
+    display: none;
+  }
+  .fixed-nav--mobile {
+    position: fixed;
+    transition: transform 0.2s ease-in;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-around;
+    background-color: $brown-light-color;
+    padding: 0 10px 10px 5px;
+    border-radius: 20px 20px 0px 0;
+    z-index: 10;
+  }
+  .btn-navigate {
+    padding: 20px 0 0 0;
+    color: $brown-color;
+    border-radius: 50%;
+    // background-color: yellow;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    &-text {
+      font-size: 12px;
+    }
+    &--active {
+      color: $overlay-video-color;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $brown-color;
+      }
+    }
+  }
+}
