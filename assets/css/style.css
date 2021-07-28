@@ -38,6 +38,10 @@ section {
   background-color: #a55eea;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .fixed-nav {
   position: fixed;
   left: 0;
