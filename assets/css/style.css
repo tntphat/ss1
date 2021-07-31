@@ -259,6 +259,8 @@ section {
   display: flex;
   flex-direction: column;
   background-color: white;
+  height: unset;
+  min-height: 100vh;
 }
 @media screen and (max-width: 1113px) {
   .two {
@@ -273,7 +275,7 @@ section {
 @media screen and (max-width: 740px) {
   .two {
     padding: 0 20px;
-    height: 100vh;
+    
   }
 }
 
