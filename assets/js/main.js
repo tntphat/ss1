@@ -72,7 +72,7 @@ const handleNav = () => {
     }
   });
 };
-var curSect = 0;
+
 const targets = document.querySelectorAll("[data-observer]");
 console.log(targets);
 var observer = new IntersectionObserver(function (entries) {

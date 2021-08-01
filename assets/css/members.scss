@@ -3,12 +3,8 @@
   display: flex;
   flex-direction: column;
   background-color: white;
-  @media screen and (max-width: 1113px) {
-    height: 1050px;
-  }
-  @media screen and (max-width: 1023px) {
-    height: 1250px;
-  }
+  height: fit-content;
+  min-height: 100vh;
   @media screen and(max-width:740px) {
     padding: 0 20px;
     height: 100vh;
@@ -38,24 +34,18 @@
   }
 }
 .wrapper-members {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding: 60px 0;
+  margin: auto 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 80px;
-  grid-template-rows: 1fr 1fr;
   height: fit-content;
-  @media screen and (max-width: 1113px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  @media screen and (max-width: 1023px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+  @media screen and (min-width: 1476px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   @media screen and(max-width:740px) {
+    padding: unset;
     display: grid;
     padding-top: 60px;
     justify-content: flex-start;
@@ -77,6 +67,12 @@
     }
     & > * {
       scroll-snap-align: center;
+    }
+  }
+  .card-member:first-child {
+    .card-member-label {
+      background-color: $primary-color;
+      color: white;
     }
   }
   .card-member {
