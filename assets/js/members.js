@@ -1,3 +1,5 @@
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
 const dataMembers = [
   {
     name: "Phung Quoc Luong",
@@ -145,8 +147,6 @@ const dataConverted = dataMembersWithIcon
   )
   .join(" ");
 
-console.log(dataConverted);
-
-const wrapperMembers = document.querySelector(".wrapper-members");
+const wrapperMembers = $(".wrapper-members");
 
 wrapperMembers.innerHTML = dataConverted;

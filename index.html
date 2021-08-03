@@ -21,7 +21,7 @@
         <div class="fixed-nav">
             <a href="#section1" class="btn-navigate btn-navigate--active"><i class="fas fa-film"></i></a>
             <a href="#section2" class="btn-navigate"><i class="fas fa-users"></i></a>
-            <a href="#section3" class="btn-navigate"><i class="fas fa-file-alt"></i></a>
+            <a href="#section3" class="btn-navigate"><i class="far fa-file-alt"></i></a>
             <a href="#section4" class="btn-navigate">A</a>
         </div>
         <div class="-nav fixed-nav--mobile">
@@ -69,7 +69,50 @@
             </div>
         </section>
         <section id="section3" class="three">
-            <span class="test" data-observer>Document Section</span>
+            <!-- <div data-observer></div> -->
+            <div class="section-texts">
+                <p class="text-heading">our documents</p>
+            </div>
+            <!-- <embed src="assets/documents/Chapter-5.pdf" width="800px" height="500px" /> -->
+            <input type="checkbox" id="file-checkbox" hidden>
+            <div class="wrapper-display">
+                <label for="file-checkbox" class="overlay"></label>
+                <span class="file-spinned-top">
+                    <span class="btn file-spinned-top-close">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    <span class="file-spinned-top-icon">
+                    </span>
+                    <span class="file-spinned-top-name">
+
+                    </span>
+                </span>
+                <div class="frames-wrapper">
+
+                    <iframe class="display-file" id="frame-display"
+                        src="https://drive.google.com/file/d/1D2SMZhCEOtCVzdoTclHoYXgeywtmZ-JJ/preview">
+
+                    </iframe>
+
+                </div>
+                <span class="btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+                <span class="btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+            </div>
+            <div class="wrapper-documents" data-observer>
+                <!-- Tab items -->
+                <div class="tabs">
+
+                </div>
+
+                <!-- Tab content -->
+                <div class="tab-content">
+
+                </div>
+            </div>
         </section>
         <section id="section4" class="four">
             <span class="test" data-observer>.</span>
@@ -77,6 +120,7 @@
         </section>
     </div>
     <script src="assets/js/members.js"></script>
+    <script src="assets/js/documents.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

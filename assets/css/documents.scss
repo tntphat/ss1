@@ -1,0 +1,318 @@
+.three {
+  background-color: white;
+  padding: 30px 62px 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: fit-content;
+
+  // position: relative;
+  .wrapper-documents {
+    // background-color: yellow;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    margin: 20px 0;
+    flex: 1;
+  }
+  @media screen and(max-width:740px) {
+    padding: 15px 4px 20px;
+    .wrapper-documents {
+      // background-color: yellow;
+      border-radius: 5px;
+      padding: 5px 10px;
+      border: 1px solid #999;
+      margin: 10px 0;
+    }
+  }
+}
+.tabs {
+  display: flex;
+  position: relative;
+  .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: $desc-text-color;
+    transition: all 0.2s ease;
+  }
+  .tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $desc-text-color;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+  }
+  @media screen and(max-width:1023px) {
+    .line {
+      height: 3px;
+      border-radius: 8px;
+    }
+    .tab-item {
+      min-width: 80px;
+      padding: 8px 10px 6px 10px;
+      font-size: 12px;
+      border-bottom: 2px solid transparent;
+    }
+    .tab-icon {
+      font-size: 16px;
+      width: 20px;
+    }
+  }
+  .tab-item:hover {
+    opacity: 1;
+    background-color: rgba($color: $desc-text-color, $alpha: 0.05);
+    border-color: rgba($color: $desc-text-color, $alpha: 0.1);
+  }
+  .tab-item.active {
+    opacity: 1;
+  }
+}
+
+.fa-file-word {
+  color: $word-color;
+}
+
+.fa-file-pdf {
+  color: $pdf-color;
+}
+.fa-file-video {
+  color: $video-color;
+}
+
+.fa-file-excel {
+  color: $excel-color;
+}
+.fas.fa-file-alt {
+  color: $txt-color;
+}
+.fa-file-image {
+  color: $img-color;
+}
+
+.tab-content {
+  padding: 28px 0;
+  .tab-pane {
+    color: #333;
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+  .tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .list-files {
+    list-style: none;
+    @media screen and(max-width:1023px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media screen and(max-width:700px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .file-item {
+      display: flex;
+      width: 100%;
+      // justify-content: space-between;
+      align-items: center;
+      border: 2px solid $border-color;
+      padding: 15px 20px;
+      border-radius: 10px;
+      @media screen and(max-width:1023px) {
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: flex-start;
+        &:first-child {
+          margin-top: 10px;
+        }
+      }
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba($color: #000000, $alpha: 0.1);
+      }
+      .file-infor {
+        // width: 60%;
+        cursor: pointer;
+        &:hover {
+          .file-icon {
+            opacity: 0.7;
+          }
+          .file-name {
+            text-decoration: underline;
+          }
+        }
+
+        .file-name {
+          margin-left: 12px;
+          color: $dark-color;
+        }
+        @media screen and(max-width:1023px) {
+          font-size: 12px;
+          display: flex;
+          max-width: 50%;
+        }
+      }
+      .file-detail {
+        // width: 40%;
+        min-width: 30%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .file-date {
+          color: $gray-text;
+          display: inline-block;
+        }
+        .file-creators {
+          margin-left: auto;
+          display: flex;
+
+          .creator-img {
+            width: 30px;
+            height: 30px;
+            // object-fit: cover;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            border-radius: 50%;
+            margin-left: -15px;
+            &:hover {
+              .creator-img-name {
+                visibility: visible;
+              }
+            }
+            &-name {
+              visibility: hidden;
+              width: 50px;
+              background-color: $desc-text-color;
+              color: #fff;
+              text-align: center;
+              padding: 5px 0;
+              border-radius: 6px;
+              font-size: 12px;
+              position: absolute;
+              top: -120%;
+              z-index: 10;
+            }
+          }
+        }
+
+        @media screen and(max-width:1023px) {
+          margin-left: 0;
+          font-size: 12px;
+          .file-creators {
+            margin-left: 30px;
+            .creator-img {
+              width: 15px;
+              height: 15px;
+              margin-left: -7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper-display {
+  display: none;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .overlay {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: $overlay-video-color, $alpha: 0.8);
+  }
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+
+  // opacity: 0.5;
+  .frames-wrapper {
+    z-index: 10;
+  }
+  iframe {
+    display: none;
+    width: 800px;
+    height: 500px;
+    // z-index: 10;
+  }
+  .file-spinned-top {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    .btn {
+      border-radius: unset;
+      background-color: unset;
+    }
+    &-icon {
+      margin: 0 10px 0 20px;
+    }
+  }
+  .btn {
+    background-color: $dark-color;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .prev-btn {
+    left: 4%;
+  }
+  .next-btn {
+    right: 4%;
+  }
+}
+
+#file-checkbox:checked ~ .wrapper-display {
+  display: flex;
+}

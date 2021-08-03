@@ -1,9 +1,9 @@
-const intro = document.querySelector(".wrapper-intro");
-const introDetails = document.querySelector(".intro-details");
-const video = document.querySelector(".video");
-const overlay = document.querySelector(".wrapper-overlay");
-const nav = document.querySelector(".fixed-nav");
-const navMobile = document.querySelector(".fixed-nav--mobile");
+const intro = $(".wrapper-intro");
+const introDetails = $(".intro-details");
+const video = $(".video");
+const overlay = $(".wrapper-overlay");
+const nav = $(".fixed-nav");
+const navMobile = $(".fixed-nav--mobile");
 
 // Handle video play and pause
 var first = 0;
@@ -37,8 +37,7 @@ video.onpause = () => {
 
 // Handle active navigate
 
-const sections = document.querySelectorAll("section");
-console.log(sections);
+const sections = $$("section");
 
 let options = {
   rootMargin: "0px",
@@ -56,11 +55,9 @@ const removeClass = (el) => {
   }
 };
 
-const listNav = document.querySelectorAll(".btn-navigate");
-console.log(listNav);
+const listNav = $$(".btn-navigate");
 
 const handleNav = () => {
-  console.log(targets[0].classList.contains("is-visible"));
   if (!targets[0].classList.contains("is-visible") && first) video.pause();
   targets.forEach((ele, ind) => {
     if (ele.classList.contains("is-visible")) {
@@ -73,8 +70,7 @@ const handleNav = () => {
   });
 };
 
-const targets = document.querySelectorAll("[data-observer]");
-console.log(targets);
+const targets = $$("[data-observer]");
 var observer = new IntersectionObserver(function (entries) {
   entries.forEach((entry, ind) => {
     if (entry.isIntersecting) {
