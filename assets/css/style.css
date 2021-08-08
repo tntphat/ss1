@@ -280,6 +280,19 @@ section {
   text-transform: capitalize;
   color: #3085f3;
 }
+@media screen and (max-width: 1023px) {
+  .section-texts .text-heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-texts .text-heading {
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+  }
+}
 .section-texts .text-title {
   text-transform: capitalize;
   height: fit-content;
@@ -430,7 +443,7 @@ section {
 
 .three {
   background-color: white;
-  padding: 30px 62px 50px;
+  padding: 30px 62px 100px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -555,17 +568,10 @@ section {
 .tab-content .list-files {
   list-style: none;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 701px) {
   .tab-content .list-files {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .tab-content .list-files {
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
@@ -577,7 +583,7 @@ section {
   padding: 15px 20px;
   border-radius: 10px;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 701px) {
   .tab-content .list-files .file-item {
     flex-direction: column;
     justify-items: flex-start;
@@ -653,13 +659,30 @@ section {
   top: -120%;
   z-index: 10;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) and (min-width: 701px) {
   .tab-content .list-files .file-item .file-detail {
     margin-left: 0;
-    font-size: 12px;
+    font-size: 16px;
+  }
+  .tab-content .list-files .file-item .file-detail .file-date {
+    margin-right: 10px;
   }
   .tab-content .list-files .file-item .file-detail .file-creators {
     margin-left: 30px;
+  }
+  .tab-content .list-files .file-item .file-detail .file-creators .creator-img {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .tab-content .list-files .file-item .file-detail {
+    font-size: 12px;
+  }
+  .tab-content .list-files .file-item .file-detail .file-date {
+    font-size: 8px;
+    margin-right: 8px;
   }
   .tab-content .list-files .file-item .file-detail .file-creators .creator-img {
     width: 15px;
