@@ -107,7 +107,7 @@ const dataDocument = [
     nameFolder: "Tuần 2",
     files: [
       {
-        link: "https://drive.google.com/file/d/13sXrUd5SPyowZaSETVbyILM1RexQtasi/preview",
+        link: "https://drive.google.com/file/d/12pnHYMZYqYPFYNOfqrjcGWgDL-kOUDrM/preview",
         nameFile: "link-web",
         type: "txt",
         date: "08/08/21",
