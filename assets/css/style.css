@@ -765,4 +765,50 @@ section {
   display: flex;
 }
 
+.link-drive-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-drive-wrapper .title-content {
+  display: inline-block;
+}
+@media screen and (max-width: 740px) {
+  .link-drive-wrapper .title-content {
+    font-size: 14px;
+  }
+}
+
+.link-drive {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #3085f3;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: opacity 0.2s linear;
+}
+.link-drive--all {
+  background-color: #f53b57;
+}
+@media screen and (max-width: 740px) {
+  .link-drive {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  .link-drive-icon {
+    padding-left: 2px;
+  }
+}
+.link-drive-icon {
+  padding-left: 5px;
+}
+.link-drive:hover {
+  opacity: 0.85;
+}
+
 /*# sourceMappingURL=style.css.map */

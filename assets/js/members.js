@@ -133,7 +133,7 @@ const dataConverted = dataMembersWithIcon
       </div>
       <div class="divider"></div>
       <div class="socials">
-          <a href="${data.fb}" class="social-item"><i
+          <a target="_blank" href="${data.fb}" class="social-item"><i
                   class="fab fa-facebook-f"></i></a>
   
           <a href="mailto:${data.mail}" class="social-item social-item--mail">

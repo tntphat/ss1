@@ -15,6 +15,8 @@ const mapDataMembers = [
 const dataDocument = [
   {
     nameFolder: "Tuần 1",
+    linkFolder:
+      "https://drive.google.com/drive/folders/1netCg2zDrz4Q05UxgFUn4L_RIjyo5GE2",
     files: [
       {
         link: "https://drive.google.com/file/d/1CZEmdV4nx3xL4F2ILkZFtZ9yTWZ8X_3q/preview",
@@ -105,9 +107,11 @@ const dataDocument = [
 
   {
     nameFolder: "Tuần 2",
+    linkFolder:
+      "https://drive.google.com/drive/folders/1a6QO5gKlphsbYS4_BRqvWUifPDdKoBLf",
     files: [
       {
-        link: "https://drive.google.com/file/d/13sXrUd5SPyowZaSETVbyILM1RexQtasi/preview",
+        link: "https://drive.google.com/file/d/12pnHYMZYqYPFYNOfqrjcGWgDL-kOUDrM/preview",
         nameFile: "link-web",
         type: "txt",
         date: "08/08/21",
@@ -222,6 +226,8 @@ const dataDocument = [
   },
   {
     nameFolder: "Tuần 3",
+    linkFolder:
+      "https://drive.google.com/drive/folders/1hQNIlUJTdbub1xkbAd2vQU4iSk7gjLi4",
     files: [
       {
         link: "https://docs.google.com/document/d/1_xyjeKXQWcC_w9_8O62LvFc0igfPki-B21UM-mJRLPQ/preview",
@@ -234,6 +240,8 @@ const dataDocument = [
   },
   {
     nameFolder: "Image",
+    linkFolder:
+      "https://drive.google.com/drive/folders/1XKmpAGV-PoU170slrp2nrMSuguoE827T",
     files: [
       {
         link: "https://drive.google.com/file/d/1eaoQCokvpIM6KN4SNDf1vFymSxHOmZIU/preview",
@@ -316,6 +324,8 @@ const dataDocument = [
   },
   {
     nameFolder: "HĐTLN",
+    linkFolder:
+      "https://drive.google.com/drive/folders/1hr2oQF33ErlzwkVaqP6TwinqDwdGNq84",
     files: [
       {
         link: "https://drive.google.com/file/d/1i3s8PGjShaMvJTTj_jkPORlf7WGABYiM/preview",
@@ -352,6 +362,10 @@ tabContent.innerHTML = dataDocument
   .map(
     (folder) => `
     <div class="tab-pane">
+    <div class="link-drive-wrapper">
+    <a class="link-drive" target="_blank" href=${folder.linkFolder}> ${folder.nameFolder} <i class="link-drive-icon fas fa-external-link-square-alt"></i> </a> 
+    <a class="link-drive link-drive--all" target="_blank" href="https://drive.google.com/drive/folders/1DF6k3GiINt19hrq1YngoZ4S0tQKo26w5"> drive <i class="link-drive-icon fas fa-external-link-square-alt"></i> </a> 
+    </div>
       <ul class="list-files">
       </ul>
     </div>`

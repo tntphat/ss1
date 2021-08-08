@@ -334,3 +334,44 @@
 #file-checkbox:checked ~ .wrapper-display {
   display: flex;
 }
+.link-drive-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title-content {
+    display: inline-block;
+    @media screen and(max-width:740px) {
+      font-size: 14px;
+    }
+  }
+}
+.link-drive {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: $primary-color;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: opacity 0.2s linear;
+  &--all {
+    background-color: #f53b57;
+  }
+  // margin-left: auto;
+  @media screen and(max-width:740px) {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    &-icon {
+      padding-left: 2px;
+    }
+  }
+  &-icon {
+    padding-left: 5px;
+  }
+  &:hover {
+    opacity: 0.85;
+  }
+}
