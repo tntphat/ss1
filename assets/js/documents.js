@@ -421,6 +421,83 @@ const dataDocument = [
     ]
   },
   {
+    nameFolder: "Tuần 6",
+    linkFolder:
+    "https://drive.google.com/drive/folders/1lvjct-NzdddQqU69MIk-14MzWOCGCISV",
+    files:[
+      {
+        link: "https://docs.google.com/document/d/1xW1X9KsrLKIpuB0wFPZasx9zs1WUj2a6JnTXmtnRlC8/preview",
+        nameFile: "BBHP_29/08/2021",
+        type: "doc",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1N9idEbes6A9oLzMrDDDPgkDlQgFT6AF7/preview",
+        nameFile: "BBHP_22/08/2021",
+        type: "pdf",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1eP8Y8rzMfQpiimKGlIpLFli--EP6vKCD/preview",
+        nameFile: "link-youtube",
+        type: "txt",
+        date: "02/09/2021",
+        creators: ["quang"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1OT38CefEbaAJn2VdfDEarBGPxDrpGJof/preview",
+        nameFile: "poster-final",
+        type: "jpg",
+        date: "29/08/2021",
+        creators: ["nam", "sum","tuan"],
+      },
+      {
+        link: "https://docs.google.com/document/d/153NW8q_5KDlstwmGBjFKpsDDUE2Temw5VPr-ST1GdJg/preview",
+        nameFile: "Biên bản đánh giá các nhóm khác",
+        type: "doc",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+    ]
+  },
+  {
+    nameFolder: "DOC",
+    linkFolder:
+    "https://drive.google.com/drive/folders/15reLx9Bm6w0-YnPHkj5VjX3PKUB2EsC1",
+    files:[
+      {
+        link: "https://docs.google.com/document/d/1Wegy8_OMXE-fNr6158vXezNgoUOsSa75oz_x9Z_c-8U/preview",
+        nameFile: "Tổng hợp biên bản",
+        type: "doc",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1WEvKoC_A45QZfMspl_tVmPxvVEQ52zB0/preview",
+        nameFile: "Tổng hợp biên bản[VER 3]",
+        type: "pdf",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1DC9ucpuo10mZYd7e2It0hrAXZ9nU-eL-/preview",
+        nameFile: "Tổng hợp biên bản[VER 2]",
+        type: "pdf",
+        date: "29/08/2021",
+        creators: ["han", "luong"],
+      },
+      {
+        link: "https://drive.google.com/file/d/1VfPZlshjaDs1MSMZiUDyEHan0s1hRjsJ/preview",
+        nameFile: "Tổng hợp biên bản[VER 1]",
+        type: "pdf",
+        date: "24/08/2021",
+        creators: ["han", "luong"],
+      },
+    ]
+  },
+  {
     nameFolder: "Image",
     linkFolder:
       "https://drive.google.com/drive/folders/1XKmpAGV-PoU170slrp2nrMSuguoE827T",
